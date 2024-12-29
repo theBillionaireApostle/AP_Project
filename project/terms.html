@@ -6,7 +6,114 @@
     <title>Terms & Conditions - ALINA POPOVA</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Hide the Razorpay link */
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            background-color: #fce4ec; /* Light pink tone */
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #e91e63; /* Vibrant pink */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo-container img {
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        header .brand-name {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        nav ul li a:hover {
+            background-color: #c2185b; /* Darker pink on hover */
+        }
+
+        /* Main Section */
+        main {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff; /* White background for content */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px 30px;
+            text-align: center;
+        }
+
+        main h1 {
+            font-size: 32px;
+            color: #e91e63;
+            margin-bottom: 20px;
+        }
+
+        main p, main ol {
+            text-align: left;
+            line-height: 1.8;
+            font-size: 16px;
+            color: #555;
+        }
+
+        main a {
+            color: #e91e63;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #e91e63;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 14px;
+            margin-top: 50px;
+            border-radius: 0 0 10px 10px;
+        }
+
+        /* Hidden Razorpay Link */
         .hidden-link {
             position: absolute;
             left: -9999px; /* Move it far off-screen */
@@ -27,21 +134,14 @@
         </div>
         
         <nav>
-          <div class="burger-menu" id="burger-menu">
-            <!-- Burger icon -->
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
-          
-          <ul class="nav-links" id="nav-links">
-            <li><a href="#" class="active">Home</a></li>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="#">Terms & Conditions</a></li>
             <li><a href="#">Cancellation & Refund</a></li>
             <li><a href="#">Shipping & Delivery</a></li>
           </ul>
         </nav>
-      </header>
+    </header>
    
     <main>
         <h1>Terms & Conditions</h1>
@@ -53,19 +153,13 @@
             <li>The use of this site must comply with all applicable laws and regulations.</li>
             <li>All content on this website is owned by ALINA POPOVA and cannot be reused without explicit permission.</li>
         </ol>
-        <p>If you need more details, please <a href="contact.html">contact us</a>.</p>
+        <p>
+            If you need more details, please <a href="contact.html">contact us</a>.
+        </p>
     </main>
 
     <!-- Hidden Razorpay Terms Link -->
     <a href="https://merchant.razorpay.com/policy/OrOebQ4vIZty7L/terms" class="hidden-link">Hidden Razorpay Terms</a>
-
-    <script>
-        // JavaScript for the burger menu
-        document.getElementById('burger-menu').addEventListener('click', function () {
-            const navLinks = document.getElementById('nav-links');
-            navLinks.classList.toggle('nav-active');
-        });
-    </script>
 
     <footer>
         <p>&copy; 2024 ALINA POPOVA. All rights reserved.</p>
